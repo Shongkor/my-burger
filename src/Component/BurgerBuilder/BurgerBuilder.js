@@ -1,12 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Control } from './Control/Control';
+import { Ingredients } from './Ingredients/Ingredients';
 
-export default class BurgerBuilder extends Component {
-  render() {
-    return (
-    <div>
-        <p>
-            Burger Builder
-        </p>
-    </div>);
+export const BurgerBuilder = () => {
+  let state = {
+    ingredients: [
+      {type: 'burger-salad', amount: 0},
+      {type: 'burger-meat', amount: 0},
+      {type: 'burger-cheese', amount: 0},
+    ],
   }
-}
+  return (
+  <div className="d-flex flex-md-row flex-column">
+     <Ingredients ingredients={state.ingredients} />
+     <Control />
+  </div>
+  );
+};
+
