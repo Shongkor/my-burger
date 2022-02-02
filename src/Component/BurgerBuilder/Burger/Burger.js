@@ -10,13 +10,13 @@ export const Burger = (props) => {
              case 'burger-bottom':
                 ingredients = <div><img src="assets/images/bottom.png" alt="burger-bottom" /></div>
                 break;
-             case 'burger-meat':
+             case 'Meat':
                 ingredients = <div><img src="assets/images/meat.png" alt="burger-meat" /></div>
                 break;
-             case 'burger-salad':
+             case 'Salad':
                 ingredients = <div><img src="assets/images/salad.png" alt="burger-salad" /></div>
                 break;
-             case 'burger-cheese':
+             case 'Cheese':
                 ingredients = <div><img src="assets/images/cheese.png" alt="burger-cheese" /></div>
                 break;
             default: 

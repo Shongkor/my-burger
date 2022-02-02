@@ -2,6 +2,7 @@ import React from 'react';
 import { Burger } from '../Burger/Burger';
 
 export const Ingredients = (props) => {
+  console.log(props)
   let ingredients = props.ingredients.map(item => {
     let amountArray = [...Array(item.amount).keys()]
     return amountArray.map(_ => {
