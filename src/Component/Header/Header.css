@@ -2,3 +2,11 @@
     width: 6%;
     border-radius:10px;
 }
+.orderNavLink{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+}
+.active{
+    color:gold;
+}

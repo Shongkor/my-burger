@@ -35,7 +35,7 @@ export const Control = (props) => {
           <CardFooter>
             Total Price: {props.price.totalPrice} TK
           </CardFooter>
-          <button disabled={props.disabled} className="btn btn-primary mt-3" onClick={props.handleModal}>Order Now</button>
+          <button disabled={!props.disabled} className="btn btn-primary mt-3" onClick={props.handleModal}>Order Now</button>
       </Card>
   </div>
   );
