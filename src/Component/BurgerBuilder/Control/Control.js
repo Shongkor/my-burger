@@ -1,4 +1,5 @@
 import React from 'react';
+import {useSelector} from 'react-redux'
 import { Card, CardBody, CardFooter, CardHeader } from 'reactstrap';
 
 export const Control = (props) => {
@@ -16,6 +17,7 @@ export const Control = (props) => {
                 </div>
             )
     }
+    const totalPrice = useSelector(state=>state.totalPrice)
   return (
   <div className="my-5 col-md-5 col-12">
       <Card className="text-center">
@@ -33,7 +35,7 @@ export const Control = (props) => {
           ))}
           </CardBody>
           <CardFooter>
-            Total Price: {props.price.totalPrice} TK
+            Total Price: {totalPrice} TK
           </CardFooter>
           <button disabled={!props.disabled} className="btn btn-primary mt-3" onClick={props.handleModal}>Order Now</button>
       </Card>

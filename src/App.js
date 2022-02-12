@@ -4,14 +4,18 @@ import {
   BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
+import { Provider } from 'react-redux';
+import { store } from './Redux/store';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Main />
-      </Switch>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Switch>
+          <Main />
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 
